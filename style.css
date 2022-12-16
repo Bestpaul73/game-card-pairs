@@ -1,0 +1,13 @@
+@font-face {
+    font-family: StratosSkyeng;
+    font-style: normal;
+    src: local('StratosSkyeng'),
+        url('./fonts/stratosskyengweb-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: StratosSkyeng;
+    font-style: normal;
+    src: local('StratosSkyeng'),
+        url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
+}
