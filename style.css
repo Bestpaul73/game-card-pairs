@@ -1,3 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    background-color: #004980;
+}
+
+.level-screen {
+    position: relative;
+    width: 480px;
+    height: 430px;
+    top: 158px;
+    background: #C2F5FF;
+    border-radius: 12px;
+}
+
+.level-radio {
+    padding-top: 52px;
+}
+
+.level-title {
+    font-family: 'StratosSkyeng';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #004980;
+}
+
+label>input {
+    /* HIDE RADIO */
+    visibility: hidden;
+    /* Makes input not-clickable */
+    position: absolute;
+    /* Remove input from document flow */
+}
+
+.level-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 52px;
+    padding-bottom: 67px;
+}
+
+.level-form-btn {
+    width: 246px;
+    height: 50px;
+    background: #7AC100;
+    border-radius: 12px;
+}
+
 @font-face {
     font-family: StratosSkyeng;
     font-style: normal;
@@ -10,21 +78,4 @@
     font-style: normal;
     src: local('StratosSkyeng'),
         url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
-}
-
-.app {
-    width: 100%;
-    height: 100vh;
-    background-color: #004980;
-}
-
-.level {
-    position: absolute;
-    width: 480px;
-    height: 459px;
-    left: 272px;
-    top: 158px;
-
-    background: #C2F5FF;
-    border-radius: 12px;
 }
