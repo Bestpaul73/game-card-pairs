@@ -1,4 +1,4 @@
-let LEVEL = 'basic';
+let LEVEL = '';
 
 window.application = {
     //здесь мы со след домашки напишем красивый код), 

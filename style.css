@@ -59,6 +59,17 @@ label>input {
     padding-bottom: 67px;
 }
 
+.level-checked_button {
+    border: 3px solid #000;   
+    border-radius: 12px;
+}
+
+/* .level-basic :focus {
+    color: rgb(255, 0, 0);
+    border: 1px solid #000;   
+} */
+
+
 .level-form-btn {
     width: 246px;
     height: 50px;
