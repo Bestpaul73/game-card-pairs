@@ -19,17 +19,16 @@
                     <label class="level-title">Выбери сложность</label>
                     <div class="level-buttons">
                         <label for="level-basic">
-                            <input id="level-basic" name="group-level" class="field__control" type="radio"
-                                value="basic">
+                            <input id="level-basic" name="group-level" class="level-buttons" type="radio" value="basic">
                             <img src="./img/1.png" alt="1">
                         </label>
                         <label for="level-middle">
-                            <input id="level-middle" name="group-level" class="field__control" type="radio"
+                            <input id="level-middle" name="group-level" class="level-buttons" type="radio"
                                 value="middle">
                             <img src="./img/2.png" alt="2">
                         </label>
                         <label for="level-advanced">
-                            <input id="level-advanced" name="group-level" class="field__control" type="radio"
+                            <input id="level-advanced" name="group-level" class="level-buttons" type="radio"
                                 value="advanced">
                             <img src="./img/3.png" alt="3">
                         </label>
@@ -43,18 +42,27 @@
     <script src="./src/index.js"></script>
     <script>
         const form = document.querySelector('.level-form');
+        const radioButtons = form.querySelectorAll('label');
         const radio = form.querySelector('.level-radio');
 
-        function handleRadioChange(event) {
-            LEVEL = event.target.value;
+        function handleRadioChange(e) {
+
+            LEVEL = e.target.value;
             console.log(LEVEL);
+            // console.dir(e.target);
+            radioButtons.forEach((item) => {
+                item.classList.remove('level-checked_button');
+            });
+            e.target.parentElement.classList.add('level-checked_button');
         }
 
         radio.addEventListener('change', handleRadioChange);
 
         form.addEventListener('submit', (e) => {
             e.preventDefault();
-            console.log(LEVEL, "переходим к игре");
+            if (LEVEL) {
+                console.log(LEVEL, "переходим к игре");
+            };
         });
     </script>
 </body>
