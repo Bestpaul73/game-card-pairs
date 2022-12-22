@@ -40,31 +40,7 @@
     </div>
 
     <script src="./src/index.js"></script>
-    <script>
-        const form = document.querySelector('.level-form');
-        const radioButtons = form.querySelectorAll('label');
-        const radio = form.querySelector('.level-radio');
-
-        function handleRadioChange(e) {
-
-            LEVEL = e.target.value;
-            console.log(LEVEL);
-            // console.dir(e.target);
-            radioButtons.forEach((item) => {
-                item.classList.remove('level-checked_button');
-            });
-            e.target.parentElement.classList.add('level-checked_button');
-        }
-
-        radio.addEventListener('change', handleRadioChange);
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (LEVEL) {
-                console.log(LEVEL, "переходим к игре");
-            };
-        });
-    </script>
+    <script src="./src/level.js"></script>
 </body>
 
 </html>
