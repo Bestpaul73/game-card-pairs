@@ -1,6 +1,6 @@
 let LEVEL = '';
+const APP = document.querySelector('.app');
 
 window.application = {
-    //здесь мы со след домашки напишем красивый код), 
-    //создадим структуру, как в курсовой, создадим js-файлы на каждый экран
+  
 };
