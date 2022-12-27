@@ -1,3 +1,6 @@
+/* stylelint-disable font-family-name-quotes */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +22,7 @@
     width: 480px;
     height: 430px;
     top: 158px;
-    background: #C2F5FF;
+    background: #c2f5ff;
     border-radius: 12px;
 }
 
@@ -34,15 +37,17 @@
     font-size: 40px;
     line-height: 48px;
     text-align: center;
-    font-feature-settings: 'pnum'on, 'lnum'on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
     color: #004980;
 }
 
-label>input {
+label > input {
     /* HIDE RADIO */
     visibility: hidden;
+
     /* Makes input not-clickable */
     position: absolute;
+
     /* Remove input from document flow */
 }
 
@@ -59,8 +64,8 @@ label>input {
     padding-bottom: 67px;
 }
 
-.level-checked_button {
-    border: 3px solid #000;   
+.level-checked-button {
+    border: 3px solid #000;
     border-radius: 12px;
 }
 
@@ -69,11 +74,10 @@ label>input {
     border: 1px solid #000;   
 } */
 
-
 .level-form-btn {
     width: 246px;
     height: 50px;
-    background: #7AC100;
+    background: #7ac100;
     border-radius: 12px;
 }
 

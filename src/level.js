@@ -139,9 +139,9 @@ const radioBtn = form.querySelector('.level-radio');
 function handleRadioChange(e) {
     LEVEL = e.target.value;
     radioButtons.forEach((item) => {
-        item.classList.remove('level-checked_button');
+        item.classList.remove('level-checked-button');
     });
-    e.target.parentElement.classList.add('level-checked_button');
+    e.target.parentElement.classList.add('level-checked-button');
 }
 
 radioBtn.addEventListener('change', handleRadioChange);
