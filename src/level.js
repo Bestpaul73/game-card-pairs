@@ -1,9 +1,8 @@
-
+/* eslint-disable no-undef */
 const templateLevelScreen = {
     tag: 'div',
     cls: ['center', 'level-screen'],
-    content:
-    {
+    content: {
         tag: 'form',
         cls: 'level-form',
         content: [
@@ -29,18 +28,16 @@ const templateLevelScreen = {
                                     {
                                         tag: 'input',
                                         cls: 'level-buttons',
-                                        attrs:
-                                        {
+                                        attrs: {
                                             id: 'level-basic',
                                             name: 'group-level',
                                             type: 'radio',
                                             value: 'basic',
-                                        }
+                                        },
                                     },
                                     {
                                         tag: 'img',
-                                        attrs:
-                                        {
+                                        attrs: {
                                             src: './img/1.png',
                                             alt: '1',
                                         },
@@ -56,22 +53,19 @@ const templateLevelScreen = {
                                     {
                                         tag: 'input',
                                         cls: 'level-buttons',
-                                        attrs:
-                                        {
+                                        attrs: {
                                             id: 'level-middle',
                                             name: 'group-level',
                                             type: 'radio',
                                             value: 'middle',
-                                        }
+                                        },
                                     },
                                     {
                                         tag: 'img',
-                                        attrs:
-                                        {
+                                        attrs: {
                                             src: './img/2.png',
                                             alt: '2',
                                         },
-
                                     },
                                 ],
                             },
@@ -84,18 +78,16 @@ const templateLevelScreen = {
                                     {
                                         tag: 'input',
                                         cls: 'level-buttons',
-                                        attrs:
-                                        {
+                                        attrs: {
                                             id: 'level-advanced',
                                             name: 'group-level',
                                             type: 'radio',
                                             value: 'advanced',
-                                        }
+                                        },
                                     },
                                     {
                                         tag: 'img',
-                                        attrs:
-                                        {
+                                        attrs: {
                                             src: './img/3.png',
                                             alt: '3',
                                         },
@@ -104,15 +96,15 @@ const templateLevelScreen = {
                             },
                         ],
                     },
-                ]
+                ],
             },
             {
                 tag: 'button',
                 cls: 'level-form-btn',
                 content: 'Старт',
-            }
-        ]
-    }
+            },
+        ],
+    },
 };
 
 /* <div class="center level-screen">
@@ -137,7 +129,7 @@ const templateLevelScreen = {
         </form>
 </div> */
 
-APP.innerHTML='';
+APP.innerHTML = '';
 APP.appendChild(templateEngine(templateLevelScreen));
 
 const form = document.querySelector('.level-form');
@@ -157,7 +149,7 @@ radioBtn.addEventListener('change', handleRadioChange);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (LEVEL) {
-        console.log(LEVEL, "переходим к игре");
+        console.log(LEVEL, 'переходим к игре');
         renderGameScreen();
-    };
+    }
 });
