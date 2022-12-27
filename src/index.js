@@ -1,7 +1,5 @@
 /* eslint-disable no-unused-vars */
-let LEVEL = "";
+let LEVEL = '';
 const APP = document.querySelector('.app');
 
-window.application = {
-
-};
+window.application = {};
