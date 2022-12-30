@@ -107,28 +107,6 @@ const templateLevelScreen = {
     },
 };
 
-/* <div class="center level-screen">
-        <form class="level-form">
-            <div class="level-radio">
-                <label class="level-title">Выбери сложность</label>
-                <div class="level-buttons">
-                    <label for="level-basic">
-                        <input id="level-basic" name="group-level" class="level-buttons" type="radio" value="basic"> 
-                        <img src="./img/1.png" alt="1">
-                    </label>
-                    <label for="level-middle">
-                        <input id="level-middle" name="group-level" class="level-buttons" type="radio" value="middle"> 
-                        <img src="./img/2.png" alt="2">
-                    </label>
-                    <label for="level-advanced">
-                        <input id="level-advanced" name="group-level" class="level-buttons" type="radio" value="advanced"> <img src="./img/3.png" alt="3">
-                    </label>
-                </div>
-            </div>
-            <button class="level-form-btn">Старт</button>
-        </form>
-</div> */
-
 APP.innerHTML = '';
 APP.appendChild(templateEngine(templateLevelScreen));
 

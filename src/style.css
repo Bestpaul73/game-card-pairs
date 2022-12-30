@@ -1,9 +1,26 @@
-/* stylelint-disable font-family-name-quotes */
-/* stylelint-disable CssSyntaxError */
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@font-face {
+    font-family: StratosSkyeng;
+    font-style: normal;
+    src: local('StratosSkyeng'),
+        url('./fonts/stratosskyengweb-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: StratosSkyeng;
+    font-style: normal;
+    src: local('StratosSkyeng'),
+        url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: StratosSkyeng, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .center {
@@ -31,9 +48,6 @@
 }
 
 .level-title {
-    font-family: 'StratosSkyeng';
-    font-style: normal;
-    font-weight: 400;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -75,22 +89,13 @@ label > input {
 } */
 
 .level-form-btn {
+    font-family: StratosSkyeng, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
     width: 246px;
     height: 50px;
     background: #7ac100;
     border-radius: 12px;
-}
-
-@font-face {
-    font-family: StratosSkyeng;
-    font-style: normal;
-    src: local('StratosSkyeng'),
-        url('./fonts/stratosskyengweb-regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: StratosSkyeng;
-    font-style: normal;
-    src: local('StratosSkyeng'),
-        url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
+    color: #fff;
 }
