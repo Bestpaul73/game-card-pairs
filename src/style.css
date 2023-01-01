@@ -51,11 +51,13 @@ body {
     font-size: 40px;
     line-height: 48px;
     text-align: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* stylelint-disable-next-line prettier/prettier */
+    font-feature-settings: 'pnum'on, 'lnum'on;
     color: #004980;
 }
 
-label > input {
+/* stylelint-disable-next-line prettier/prettier */
+label>input {
     /* HIDE RADIO */
     visibility: hidden;
 
@@ -98,4 +100,40 @@ label > input {
     background: #7ac100;
     border-radius: 12px;
     color: #fff;
+}
+
+.play-header {
+    display: flex;
+    max-width: 675px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #fff;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    margin-left: 10px;
+}
+
+.play-btn {
+    width: 246px;
+    height: 50px;
+    background: #7ac100;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.play-field {
+    display: flex;
+    gap: 21px;
+    max-width: 675px;
+    flex-wrap: wrap;
 }

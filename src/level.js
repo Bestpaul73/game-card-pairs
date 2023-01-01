@@ -38,7 +38,7 @@ const templateLevelScreen = {
                                     {
                                         tag: 'img',
                                         attrs: {
-                                            src: './img/1.png',
+                                            src: './img/level1.png',
                                             alt: '1',
                                         },
                                     },
@@ -63,7 +63,7 @@ const templateLevelScreen = {
                                     {
                                         tag: 'img',
                                         attrs: {
-                                            src: './img/2.png',
+                                            src: './img/level2.png',
                                             alt: '2',
                                         },
                                     },
@@ -88,7 +88,7 @@ const templateLevelScreen = {
                                     {
                                         tag: 'img',
                                         attrs: {
-                                            src: './img/3.png',
+                                            src: './img/level3.png',
                                             alt: '3',
                                         },
                                     },
