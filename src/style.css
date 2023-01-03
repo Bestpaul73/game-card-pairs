@@ -32,6 +32,7 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #004980;
+    position: absolute;
 }
 
 .level-screen {
@@ -136,4 +137,63 @@ label>input {
     gap: 21px;
     max-width: 675px;
     flex-wrap: wrap;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: #004980;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.score-screen {
+    position: relative;
+    width: 480px;
+    height: 459px;
+    top: 158px;
+    background: #c2f5ff;
+    border-radius: 12px;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.result-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #004980;
+}
+
+.result-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* stylelint-disable-next-line prettier/prettier */
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #000;
+}
+
+.result-time {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #000;
+}
+
+.result-btn {
+    width: 246px;
+    height: 50px;
+    left: 389px;
+    top: 519px;
+    background: #7ac100;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
