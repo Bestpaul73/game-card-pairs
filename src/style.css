@@ -1,9 +1,26 @@
-/* stylelint-disable font-family-name-quotes */
-/* stylelint-disable CssSyntaxError */
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@font-face {
+    font-family: StratosSkyeng;
+    font-style: normal;
+    src: local('StratosSkyeng'),
+        url('./fonts/stratosskyengweb-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: StratosSkyeng;
+    font-style: normal;
+    src: local('StratosSkyeng'),
+        url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: StratosSkyeng, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .center {
@@ -15,6 +32,7 @@
     width: 100%;
     height: 100vh;
     background-color: #004980;
+    position: absolute;
 }
 
 .level-screen {
@@ -31,17 +49,16 @@
 }
 
 .level-title {
-    font-family: 'StratosSkyeng';
-    font-style: normal;
-    font-weight: 400;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    /* stylelint-disable-next-line prettier/prettier */
+    font-feature-settings: 'pnum'on, 'lnum'on;
     color: #004980;
 }
 
-label > input {
+/* stylelint-disable-next-line prettier/prettier */
+label>input {
     /* HIDE RADIO */
     visibility: hidden;
 
@@ -75,22 +92,108 @@ label > input {
 } */
 
 .level-form-btn {
+    font-family: StratosSkyeng, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
     width: 246px;
     height: 50px;
     background: #7ac100;
     border-radius: 12px;
+    color: #fff;
 }
 
-@font-face {
-    font-family: StratosSkyeng;
-    font-style: normal;
-    src: local('StratosSkyeng'),
-        url('./fonts/stratosskyengweb-regular.woff') format('woff');
+.play-header {
+    display: flex;
+    max-width: 675px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@font-face {
-    font-family: StratosSkyeng;
+.timer {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #fff;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    margin-left: 10px;
+}
+
+.play-btn {
+    width: 246px;
+    height: 50px;
+    background: #7ac100;
+    border-radius: 12px;
     font-style: normal;
-    src: local('StratosSkyeng'),
-        url('./fonts/stratosskyengweb-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.play-field {
+    display: flex;
+    gap: 21px;
+    max-width: 675px;
+    flex-wrap: wrap;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: #004980;
+    opacity: 0.9;
+    position: absolute;
+}
+
+.score-screen {
+    position: relative;
+    width: 480px;
+    height: 459px;
+    top: 158px;
+    background: #c2f5ff;
+    border-radius: 12px;
+    display: grid;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+.result-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #004980;
+}
+
+.result-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* stylelint-disable-next-line prettier/prettier */
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    color: #000;
+}
+
+.result-time {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    color: #000;
+}
+
+.result-btn {
+    width: 246px;
+    height: 50px;
+    left: 389px;
+    top: 519px;
+    background: #7ac100;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
 }
